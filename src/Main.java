@@ -1,7 +1,7 @@
 
     public class Main {
         public static void main(String[] args) {
-            task1(); task2(); task3();task4();task5();task6();task7();//task8();
+            task1(); task2(); task3();task4();task5();task6();task7();task8();
         }
     public static void task1 () {
         System.out.println("Задача 1:");
@@ -72,9 +72,18 @@
         public static void task7() {
             System.out.println("Задача 7:");
             int firstFeb = 5;
-            for (int i = firstFeb; i <= 31; i += 7)  {
+            for (int i = firstFeb; i <= 31; i += 7)
                 System.out.println("Сегодня пятница," + i + "-е число. Необходимо подготовить отчет");
-            }
+        }
 
+        public static void task8() {
+            System.out.println("Задача 8:");
+            int comet = 79;
+            int year1 = 1823;
+            int year2 = 2123;
+            for (int i = 0; i <= year2; i++) {
+                if ((i % comet == 0) && (i >= year1))
+                    System.out.println(i);
+            }
         }
 }
